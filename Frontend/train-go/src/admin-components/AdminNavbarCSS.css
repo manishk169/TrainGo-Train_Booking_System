@@ -1,0 +1,40 @@
+/* AdminNavbar.css */
+
+/* Smooth transition and hover underline effect for nav links */
+.nav-link-effect {
+  position: relative;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #000000 !important;
+}
+
+.nav-link-effect:hover{
+  /* font-size: 1.1rem; */
+  transform: scale(1.10);   
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-link-effect::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.nav-link-effect:hover::after {
+  width: 100%;
+}
+
+.navbar-brand {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.10);
+  color: blue !important;
+}
+    

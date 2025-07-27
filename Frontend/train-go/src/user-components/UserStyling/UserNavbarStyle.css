@@ -1,0 +1,135 @@
+/* AdminNavbar.css */
+
+/* fonts */
+@font-face {
+    font-family:"BabyPlums";
+    src: url(../../assets/fonts/BabyPlums.ttf) format('truetype');
+    
+}
+
+@font-face {
+    font-family:"ChrustyRock";
+    src: url(../../assets/fonts/ChrustyRock.ttf) format('truetype');
+    
+}
+
+@font-face {
+    font-family:"pacifico";
+    src: url(../../assets/fonts/Pacifico.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:"Sofia-Regular";
+    src: url(../../assets/fonts/Sofia-Regular.otf);
+    
+}
+
+@font-face {
+    font-family:"Spooky-Things";
+    src: url(../../assets/fonts/Spooky-Things.otf);
+    
+}
+
+@font-face {
+    font-family:"BetsyFlanagan";
+    src: url(../../assets/fonts/BetsyFlanagan.ttf);
+    
+}
+
+@font-face {
+    font-family:"PalmLeaf1";
+    src: url(../../assets/fonts/PalmLeafDemoRegular-lg61w.ttf);  
+}
+
+@font-face {
+    font-family:"PamelaBeauty";
+    src: url(../../assets/fonts/PamelaBeautyRegular.ttf);  
+}
+
+@font-face {
+    font-family:"KALOOT";
+    src: url(../../assets/fonts/KALOOT.otf);  
+}
+
+@font-face {
+    font-family:"hotpizza";
+    src: url(../../assets/fonts/hotpizza.ttf);  
+    
+}
+
+@font-face {
+    font-family:"vogue";
+    src: url(../../assets/fonts/Vogue.ttf);  
+    
+}
+
+@font-face {
+    font-family:"hanged-letters";
+    src: url(../../assets/fonts/Hanged-Letters.ttf);  
+    
+}
+
+@font-face {
+    font-family:"joejack";
+    src: url(../../assets/fonts/JoeJack.ttf);  
+    
+}
+
+@font-face {
+    font-family:"heart-blues";
+    src: url(../../assets/fonts/Heart-Blues.ttf);  
+    
+}
+
+
+/* Smooth transition and hover underline effect for nav links */
+#logo-text{
+    background: url(../../assets/abstract-blur-gradient-background-vector.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    to{
+        background-position-x:-500px;
+    }
+}
+.nav-link-effect {
+  position: relative;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #000000 !important;
+}
+
+.nav-link-effect:hover{
+  /* font-size: 1.1rem; */
+  transform: scale(1.30);   
+  /* box-shadow: 2px 2px 2px rgb(98, 98, 98); */
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-link-effect::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.nav-link-effect:hover::after {
+  width: 100%;
+}
+
+.navbar-brand {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.10);
+  color: blue !important;
+}
+    
